@@ -1,0 +1,9 @@
+steps:
+  - script: echo This is the step in template!
+    displayName: Script from template
+    
+  - script: dir
+    displayName: Dir from template
+    
+  - script: echo This is 3rd step from template
+    displayName: Third step from template

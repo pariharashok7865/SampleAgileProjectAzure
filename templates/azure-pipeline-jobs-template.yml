@@ -1,0 +1,13 @@
+parameters:
+  - name: jobName
+    default: 'job'
+  - name: vmImage
+    default: 'ubuntu-latest'
+
+
+jobs:
+  - job: ${{ parameters.jobName }}
+    pool:
+      vmImage: ${{ parameters.vmImage }}
+    steps:
+      - bash: echo "Hello ${{ parameters.vmImage }} from template !!"

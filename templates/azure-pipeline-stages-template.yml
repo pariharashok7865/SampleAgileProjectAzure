@@ -1,0 +1,7 @@
+stages:
+  - stage: StageTemplate
+    displayName: Stage from template
+    jobs:
+      - job: angularinstall
+        steps:
+          - script: npm install angular      
